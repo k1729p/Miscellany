@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+      background-color: aliceblue;
+    }
+    p {
+      background-color: cornsilk;
+    }
+
+    fieldset {
+      background-color: honeydew;
+    }
+</style>
+<head>
+    <title>HTML5 Input Tags with Validation</title>
+</head>
+<body>
+<h3>HTML5 Input Tags with
+    <mark>Validation</mark>
+</h3>
+<form action="/" method="post" id="form1">
+    <p>
+        <label for="keyword">Search:</label>
+        <input type="search" id="keyword" name="search" placeholder="keyword" title="Search with keyword"/>
+    </p>
+    <fieldset>
+        <legend>Names</legend>
+        <label for="f_name">First Name:</label>
+        <input type="text" id="f_name" name="f_name" placeholder="First Name"
+               maxlength="5" title="Five letter name"/>
+        <label for="l_name">Last Name:</label>
+        <input type="text" id="l_name" name="l_name" placeholder="Last Name"
+               maxlength="5" title="Five letter name"/>
+    </fieldset>
+    <p>
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code" placeholder="USA"
+               size="3" pattern="[A-Za-z]{3}" title="Three letter country code" required/>
+    </p>
+    <p>
+        <label for="quantity">Quantity (12, 24, 36, 48):</label>
+        <input type="number" id="quantity" name="quantity"
+               size="2" min="12" max="48" step="12" required/>
+    </p>
+    <p>
+        <label for="start_date">Enter the date between '2010-12-20' and '2010-12-31':</label>
+        <input type="date" id="start_date" name="start_date"
+               min="2010-12-20" value="2010-12-24" max="2010-12-31"/>
+    </p>
+    <fieldset>
+        <legend>Quality</legend>
+        <input type="radio" id="quality_high" name="quality" value="high" required/>
+        <label for="quality_high">High</label>
+        <input type="radio" id="quality_low" name="quality" value="low" required/>
+        <label for="quality_low">Low</label>
+    </fieldset>
+    <fieldset>
+        <legend>Contact</legend>
+        <input type="checkbox" id="contact_mail" name="contact" value="mail"/>
+        <label for="contact_mail">Mail</label>
+        <input type="checkbox" id="contact_sms" name="contact" value="sms"/>
+        <label for="contact_sms">SMS</label>
+    </fieldset>
+    <fieldset>
+        <legend>Select from list</legend>
+        <p>
+            <label for="cars">Cars:</label>
+            <select id="cars" name="cars">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="browser">Browsers (autocomplete box):</label>
+            <input type="text" list="browsers" id="browser" name="browser" placeholder="Chrome">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </p>
+    </fieldset>
+    <p>
+        <label for="images">Select image files:</label>
+        <input type="file" id="images" name="images" multiple/>
+    </p>
+    <p>
+        <label for="sms" style="display:block">SMS comments:</label>
+        <textarea id="sms" name="sms" maxlength="140" rows="3" cols="50" placeholder="SMS text"></textarea>
+    </p>
+    <p>
+        <input type="reset" form="form1" value="Reset"/>
+        <input type="submit" form="form1" value="Submit"/>
+    </p>
+</form>
+</body>
+</html>
