@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<first xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="example.xsd">
+	First
+	<second>
+		Second
+		<third>
+			Third
+			<fourth>Fourth</fourth>
+		</third>
+	</second>
+</first>
