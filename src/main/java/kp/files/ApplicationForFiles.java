@@ -18,9 +18,8 @@ public class ApplicationForFiles {
     /**
      * The main method.
      *
-     * @param args the arguments
      */
-    public static void main(String[] args) {
+    public static void main() {
 
         Printer.printHor();
         final FilesAndZipFiles filesAndZipFiles = new FilesAndZipFiles();

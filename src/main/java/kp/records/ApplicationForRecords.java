@@ -29,9 +29,8 @@ public class ApplicationForRecords {
     /**
      * The primary entry point for launching the application.
      *
-     * @param args the command-line arguments
      */
-    public static void main(String[] args) {
+    public static void main() {
 
         Printer.printHor();
         processUnicodeScripts();

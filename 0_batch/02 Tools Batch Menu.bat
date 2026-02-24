@@ -1,5 +1,5 @@
 @echo off
-set JAVA_HOME=C:\PROGRA~1\JAVA\JDK-24
+set JAVA_HOME=C:\PROGRA~1\JAVA\JDK-25
 set SOURCEPATH=../src/main/java
 
 :menu

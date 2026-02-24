@@ -1,6 +1,6 @@
 @echo off
-set JAVA_HOME=C:\PROGRA~1\JAVA\JDK-24
-set M2_HOME=c:\\tools\\apache-maven-3.9.9
+set JAVA_HOME=C:\PROGRA~1\JAVA\JDK-25
+set M2_HOME=c:\tools\apache-maven
 pushd %cd%
 cd ..
 call %M2_HOME%\bin\mvn versions:display-plugin-updates
